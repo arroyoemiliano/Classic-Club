@@ -1,0 +1,179 @@
+$color_l: rgb(250, 238, 224);
+$color_m: rgb(249, 228, 200);
+$color_s: rgb(249, 207, 147);
+
+$max-height : 150px;
+$border-radius: 2rem;
+
+/* Estilos HTML Home */
+
+
+/* defino las areas dentro de la grilla Ultimas reseñas y agregadas */
+
+
+/* Le doy formato a las secciones  HOME*/
+
+.seccionhome {
+    display: flex;
+    flex-direction: row;
+    h3{
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .seccionhome-resenas {
+      margin: 15px;
+      background-color: $color_s;
+      border-radius: $border-radius +1;
+      .resenas-titulo{
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      }
+
+      .resenas-body {
+        display: flex;
+        p{
+          text-align: left;
+          font-family: "Courier New", Courier, monospace;
+        }
+        img {
+          max-height: $max-height*2;
+          width:auto;
+          justify-content: center;
+          border-radius: $border-radius +1;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+        @media(max-width: 984px) {
+          img {
+            width:30%;
+            align-self: center;
+            border-radius: $border-radius +2;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }   
+        @media(max-width: 576px) {
+          img {
+            width:15%;
+            align-self: center;
+            border-radius: $border-radius +2;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }  
+      }
+      @media(max-width: 576px){
+        .resenas-body{
+          display: flex;
+          flex-direction: column-reverse;
+          text-align: center;
+          margin: 10px;
+        }
+      }
+    }
+    .seccionhome-ultimasagregadas {
+      margin: 15px;
+      background-color: $color_s;
+      border-radius: $border-radius +1;
+      .ultimasagregadas-titulo{
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        }
+      .ultimasagregadas-body{
+        display: flex;
+        p{
+          text-align: left;
+          font-family: "Courier New", Courier, monospace;
+        }
+        img {
+          max-height: $max-height*2;
+          width:auto;
+          justify-content: center;
+          border-radius: $border-radius +1;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+        @media(max-width: 984px) {
+          img {
+            width:30%;
+            align-self: center;
+            border-radius: $border-radius +2;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }   
+        @media(max-width: 576px) {
+          img {
+            width:15%;
+            align-self: center;
+            border-radius: $border-radius +2;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }  
+      }
+      @media(max-width: 576px){
+        .ultimasagregadas-body{
+          display: flex;
+          flex-direction: column-reverse;
+          text-align: center;
+          margin: 10px;
+        }
+      }
+
+    }
+
+}
+
+@media(max-width: 576px){
+  .seccionhome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+  
+
+
+
+
+
+/* Le doy formato a laas secciones Actores*/
+
+.seccionactores{
+   h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    color: rgb(204, 158, 94);
+    padding: 10px;
+  }
+  .card-group{
+    img {
+      max-height: 250px;
+      width:auto;
+      border-radius: 2rem;
+      margin-top: 10px;
+    } 
+    @media(max-width: 984px) {
+      img {
+        max-height: 150px;
+        width:auto;
+      }
+    }
+    .card {
+      background-color: $color_s;
+      border-radius: 2rem;
+      .card-body{
+            font-family: "Courier New", Courier, monospace; 
+            }
+  
+    }
+  }
+
+}

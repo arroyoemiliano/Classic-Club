@@ -1,0 +1,194 @@
+
+
+/* Estilos HTML reseñas */
+
+$color_l: rgb(250, 238, 224);
+$color_m: rgb(249, 228, 200);
+$color_s: rgb(249, 207, 147);
+
+
+$border-radius: 2rem;
+$max-height : 150px;
+
+/* areas de seccion reseñas */
+
+
+
+.accordion{
+
+  .accordion-item{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: none;
+
+    .accordion-button{
+      background-color: $color_s;
+      font-family: "Courier New", Courier, monospace;
+      }
+
+    .accordion-collapse{
+      background-color: $color_s;
+      font-family: "Courier New", Courier, monospace;
+      }
+
+    .accordion-body{
+      display: flex;
+      background-color: $color_l;
+        img {
+          max-height: $max-height*2;
+          width:auto;
+          justify-content: center;
+          border-radius: $border-radius +1;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+          @media(max-width: 976px) {
+          img {
+            width:50%;
+            align-self: center;
+            border-radius: $border-radius +1;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }   
+          @media(max-width: 576px) {
+            img {
+              width:30%;
+              align-self: center;
+              border-radius: $border-radius +1;
+              margin-right: 10px;
+              margin-bottom: 10px;
+            }
+          }
+          @media(max-width: 376px) {
+          img {
+            width:15%;
+            align-self: center;
+            border-radius: $border-radius +2;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+    }
+      @media(max-width: 976px) {
+        .accordion-body {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+      } 
+      @media(max-width: 576px) {
+        .accordion-body {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+      } 
+      @media(max-width: 376px) {
+        .accordion-body {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+       
+    
+      .body{
+        h5{
+          margin-bottom:50px;
+        }
+        p{
+          padding: 10px;
+        }
+      }
+    img {
+      max-height: $max-height*2;
+      width:auto;
+      justify-content: center;
+      border-radius: $border-radius +1;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      @media(max-width: 984px) {
+        img {
+          max-height: $max-height;
+          width:auto;
+          align-self: center;
+          border-radius: $border-radius +1;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }   
+        @media(max-width: 576px) {
+          img {
+            max-height: $max-height - 50px;
+            width:auto;
+            align-self: center;
+            border-radius: $border-radius +1;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+       }
+       @media(max-width: 376px) {
+        img {
+          max-height: $max-height - 100px;
+          width:auto;
+          align-self: center;
+          border-radius: $border-radius +2;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+     }
+    }
+
+    
+  }
+
+
+  
+  } 
+
+
+
+
+
+
+  
+
+  .accordion-item:first-of-type{
+
+    .accordion-button{
+      background-color: $color_s;
+      font-family: "Courier New", Courier, monospace;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      }
+    .accordion-collapse{
+      background-color: $color_s;
+      font-family: "Courier New", Courier, monospace;
+      }
+    .accordion-body {
+      display: flex;
+      background-color: $color_l;
+    } 
+  }
+
+
+  .accordion-item:last-of-type{
+
+    .accordion-button {
+      background-color: $color_s;
+      font-family: "Courier New", Courier, monospace;  
+    }
+    .accordion-collapse{
+      background-color: $color_s;
+      font-family: "Courier New", Courier, monospace;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      }
+    .accordion-body {
+      display: flex;
+      background-color: $color_l;
+    }
+  }
+
+}
+

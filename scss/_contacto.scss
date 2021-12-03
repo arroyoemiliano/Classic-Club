@@ -1,0 +1,31 @@
+/* Estilos HTML Formulario */
+
+/* Bloque de seccion de formulario de contacto */
+$color_l: rgb(250, 238, 224);
+$color_m: rgb(249, 228, 200);
+$color_s: rgb(249, 207, 147);
+
+
+$border-radius: 2rem;
+  
+
+
+.seccion__contacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3rem;
+  }
+  
+  /* Estilos al contenido del sitio  Formularios*/
+  .formulario_contacto label,  .formulario_contacto input , .formulario_contacto div{
+    color: rgb(204, 158, 94);
+    
+  }
+
+  fieldset{
+    border-radius: 3rem;
+    background-color: rgb(249, 207, 147);
+  }
+  
