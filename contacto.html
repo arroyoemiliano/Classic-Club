@@ -42,80 +42,46 @@
 
   <section class="seccion__contacto">
     <!-- Formulario -->
-        <form action="" class="formulario_contacto">
-                <!-- Encuadre del formulario -->
-          <fieldset>
-
+        <form class="formulario_contacto">
+        <!-- Encuadre del formulario -->
+        <fieldset>
             <!-- Titulo del encuadre -->
-            <legend>Escriba aqui su sugerencia</legend>
-
+            <legend>¡Dejanos tu mensaje!</legend>
           <!-- Datos personales -->
-          <h3> Datos de Usuario</h3>
             <!-- Mail del Usuario -->
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="E-Mail" aria-label="E-Mail" aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2">@E-mail.com</span>
-          </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un e-mail de contacto">
+            </div>
             <!-- Nombre  del Usuario y Apellido del Usuario -->
-          <div class="input-group row mb-3">
-              <div class="col mb-3">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-              </div>
-              <div class="col mb-3">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-              </div>
-          </div>
-          <h3> Noticias </h3>
-          <div class="input-group mb-3">
-                  <!--Seleccion de Noticias-->
-            <select class="form-select" id="autoSizingSelect">
-              <option selected="">Seleccione una opcion</option>
-              <option value="Series">Series</option>
-              <option value="Peliculas">Peliculas</option>
-              <option value="Series y Peliculas">Series y Peliculas</option>
-              <option value="Reseñas">Reseñas</option>
-              <option value="Todos">Todos</option>
-            </select>
-          </div>
-
-          <!-- Genero -->
-          <h3>Genero</h3>
-            <div class="form-check input-group">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Masculino
-              </label>
+            <label for="data">Datos Personales</label>
+            <div class="input-group">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
             </div>
-            <div class="form-check input-group">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Femenino
-            </label>
+            <!-- Genero -->
+            <label for="data">Genero</label>
+            <div class="input-group">
+              <select class="form-control" placeholder="Seleccione">
+                <option selected>Seleccione</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otros</option>
+              </select>
             </div>
-            <div class="form-check input-group">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-            <label class="form-check-label" for="flexRadioDefault3">
-              Otros
-            </label>
-            </div>
-
-
           <!-- Sugerencias -->
-          <h3>Sugerencias</h3>
-          <div class="input-group mb-3">
-            <textarea class="form-control" id="sugerencias" placeholder="Escribanos una sugerencia sobre el sitio" required></textarea>
-            <div class="invalid-feedback">
-              Please enter a message in the textarea.
-            </div>
+          <label for="data">Sugerencias</label>
+          <div class="input-group">
+            <textarea class="form-control" placeholder="Escribi tus comentarios"></textarea>
           </div>
-
-          <div class="">
-            <button type="submit" class="btn btn-primary" value="Enviar Formulario"></button>
-
-            <button type="reset" class="btn btn-primary" value="Limpiar Formulario"></button>
-          </div>
-
-          </fieldset>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-primary">Limpiar</button>
+          
+        </fieldset>
         </form>
   </section>
 

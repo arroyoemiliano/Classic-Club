@@ -1,13 +1,15 @@
 /* Estilos HTML Formulario */
 
 /* Bloque de seccion de formulario de contacto */
-$color_l: rgb(250, 238, 224);
+
+//Variables
+$color_l: rgb(249, 207, 147);
 $color_m: rgb(249, 228, 200);
-$color_s: rgb(249, 207, 147);
-
-
+$color_s:rgb(250, 238, 224);
+$font_mono:  "Courier New", Courier, monospace;
+$font_size: 3rem;
 $border-radius: 2rem;
-  
+$padding: 10px;
 
 
 .seccion__contacto{
@@ -15,17 +17,46 @@ $border-radius: 2rem;
     text-align: center;
     justify-content: center;
     text-align: center;
-    border-radius: 3rem;
+    border-radius: $border-radius;
+    fieldset{
+      border-radius: $border-radius +1;
+      background-color: $color_l;
+
+    }
+    .col{
+      padding: $padding;
+    }
+    .form-group {
+      padding: $padding;
+    }
+    .input-group{
+      padding: $padding;
+    }
+
+    legend{
+      color: black;
+      font-family: $font_mono;
+    }
+    label{
+      color: black;
+      font-family: $font_mono;
+    }
+    option{
+      color: black;
+      font-family: $font_mono;
+    }
+    .btn{
+      color: black;
+      background-color: $color_s;
+      border-color: $color_m;
+      font-family: $font_mono;
+    }
+
+    
   }
   
   /* Estilos al contenido del sitio  Formularios*/
-  .formulario_contacto label,  .formulario_contacto input , .formulario_contacto div{
-    color: rgb(204, 158, 94);
-    
-  }
 
-  fieldset{
-    border-radius: 3rem;
-    background-color: rgb(249, 207, 147);
-  }
+
+
   

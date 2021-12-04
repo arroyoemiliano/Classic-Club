@@ -13,13 +13,12 @@
 
 @media (max-width: 550px) {
   .navbar {
-    background-color: #f9cf93;
     display: block;
   }
 }
 
 .encabezado .navbar .nav-item {
-  background-color: #f9e4c8;
+  background-color: #faeee0;
   border-radius: 3rem;
   padding: 4px;
   margin: 4px;
@@ -35,11 +34,10 @@
 
 /* Estilos del titulo del pie de pagina*/
 .nav-item .nav-link {
-  color: #f9cf93;
+  color: #f9e4c8;
 }
 
 /* Estilos HTML Home */
-/* defino las areas dentro de la grilla Ultimas reseñas y agregadas */
 /* Le doy formato a las secciones  HOME*/
 .seccionhome {
   display: -webkit-box;
@@ -220,7 +218,7 @@
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   display: block;
-  color: #cc9e5e;
+  color: #faeee0;
   padding: 10px;
 }
 
@@ -261,7 +259,7 @@
 }
 
 .accordion .accordion-item .accordion-collapse {
-  background-color: #f9cf93;
+  background-color: #f9e4c8;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -289,7 +287,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    border-radius: 3rem;
+    border-radius: 3rem, 2;
     margin-right: 10px;
     margin-bottom: 10px;
   }
@@ -301,7 +299,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    border-radius: 3rem;
+    border-radius: 3rem, 3;
     margin-right: 10px;
     margin-bottom: 10px;
   }
@@ -313,7 +311,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    border-radius: 4rem;
+    border-radius: 3rem, 4;
     margin-right: 10px;
     margin-bottom: 10px;
   }
@@ -345,74 +343,6 @@
   }
 }
 
-@media (max-width: 376px) {
-  .accordion .accordion-item .accordion-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .accordion .accordion-item .body h5 {
-    margin-bottom: 50px;
-  }
-  .accordion .accordion-item .body p {
-    padding: 10px;
-  }
-  .accordion .accordion-item img {
-    max-height: 300px;
-    width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-radius: 3rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 376px) and (max-width: 984px) {
-  .accordion .accordion-item img img {
-    max-height: 150px;
-    width: auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    border-radius: 3rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 376px) and (max-width: 576px) {
-  .accordion .accordion-item img img {
-    max-height: 100px;
-    width: auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    border-radius: 3rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 376px) and (max-width: 376px) {
-  .accordion .accordion-item img img {
-    max-height: 50px;
-    width: auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    border-radius: 4rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-
 .accordion .accordion-item:first-of-type .accordion-button {
   background-color: #f9cf93;
   font-family: "Courier New", Courier, monospace;
@@ -429,7 +359,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #faeee0;
+  background-color: #f9e4c8;
 }
 
 .accordion .accordion-item:last-of-type .accordion-button {
@@ -448,7 +378,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #faeee0;
+  background-color: #f9e4c8;
 }
 
 /* Estilos HTML Formulario */
@@ -462,19 +392,49 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  border-radius: 3rem;
+  border-radius: 2rem;
 }
 
-/* Estilos al contenido del sitio  Formularios*/
-.formulario_contacto label, .formulario_contacto input, .formulario_contacto div {
-  color: #cc9e5e;
-}
-
-fieldset {
+.seccion__contacto fieldset {
   border-radius: 3rem;
   background-color: #f9cf93;
 }
 
+.seccion__contacto .col {
+  padding: 10px;
+}
+
+.seccion__contacto .form-group {
+  padding: 10px;
+}
+
+.seccion__contacto .input-group {
+  padding: 10px;
+}
+
+.seccion__contacto legend {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.seccion__contacto label {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.seccion__contacto option {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.seccion__contacto .btn {
+  color: black;
+  background-color: #faeee0;
+  border-color: #f9e4c8;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Estilos al contenido del sitio  Formularios*/
 /* Estilos*/
 * {
   margin: none;
@@ -485,51 +445,51 @@ body {
   background-image: url(../img/fondo.jpg);
 }
 
-/* Titulo del sitio ---CAMBIAR TIPOGRAFIA----- */
-.titulo > h1 {
-  font-size: 5 rem;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  color: #cc9e5e;
-  display: block;
-  padding: 10px;
-}
-
 @media (max-width: 984px) {
-  .titulo > h1 .titulo {
+  .titulo {
     font-size: 3rem;
     padding: 20px;
   }
 }
 
 @media (max-width: 576px) {
-  .titulo > h1 .titulo {
+  .titulo {
     font-size: 2rem;
     padding: 20px;
   }
 }
 
-.titulo > h2 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  display: block;
-  color: #cc9e5e;
-  padding: 5px;
-}
-
 @media (max-width: 984px) {
-  .titulo > h2 .sub-titulos {
-    font-size: 1rem;
+  .sub-titulos {
+    font-size: 3rem -2;
     padding: 20px;
   }
 }
 
 @media (max-width: 576px) {
-  .titulo > h2 .sub-titulos {
-    font-size: 0.5rem;
+  .sub-titulos {
+    font-size: 3rem -2, 5;
     padding: 20px;
   }
+}
+
+/* Titulo del sitio ---CAMBIAR TIPOGRAFIA----- */
+.titulo > h1 {
+  font-size: 5 rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #f9cf93;
+  display: block;
+  padding: 10px;
+}
+
+.titulo > h2 {
+  font-size: 3rem -2;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  color: #f9e4c8;
+  padding: 5px;
 }
 
 .titulo > p {
@@ -537,7 +497,7 @@ body {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   display: block;
-  color: #f9e4c8;
+  color: #faeee0;
   padding: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

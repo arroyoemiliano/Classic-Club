@@ -1,11 +1,19 @@
 
 //Se define bloque de encabezado
 
+//Variables
+$color_l: rgb(249, 207, 147);
+$color_m: rgb(249, 228, 200);
+$color_s:rgb(250, 238, 224);
+$font_mono:  "Courier New", Courier, monospace;
+$font_size: 3rem;
+
+
     .navbar-brand{
-      font-family: "Courier New", Courier, monospace;
+      font-family: $font_mono;
     }
     .navbar{
-      background-color: rgb(249, 207, 147);
+      background-color: $color_l;
       border-radius: 3rem;
       margin-top: 10px;
       margin-left: 15px;
@@ -15,7 +23,6 @@
 
     @media (max-width: 550px) {
       .navbar{
-        background-color: rgb(249, 207, 147);
         display: block;
       }
 
@@ -26,11 +33,11 @@
           .navbar { 
 
               .nav-item{
-                      background-color:rgb(249, 228, 200);
+                      background-color:$color_s;
                       border-radius: 3rem;
                       padding: 4px;
                       margin: 4px;
-                      font-family: "Courier New", Courier, monospace;
+                      font-family: $font_mono;
                       border-color: rgb(0, 0, 0);
                       text-align: center;
 

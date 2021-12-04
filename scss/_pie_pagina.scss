@@ -1,5 +1,14 @@
 /* estructuraa del footer */
 
+
+//Variables 
+$color_l: rgb(249, 207, 147);
+$color_m: rgb(249, 228, 200);
+$color_s:rgb(250, 238, 224);
+$font_mono:  "Courier New", Courier, monospace;
+$font_size: 3rem;
+
+
 .footer{
   display: block;
 }
@@ -7,6 +16,6 @@
 /* Estilos del titulo del pie de pagina*/
 .nav-item .nav-link{
   
-  color: rgb(249, 207, 147);
+  color: $color_m;
 
 }

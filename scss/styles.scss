@@ -20,62 +20,64 @@ body {
 }
 
 
-$color_l: rgb(250, 238, 224);
+// Variables
+
+$color_l: rgb(249, 207, 147);
 $color_m: rgb(249, 228, 200);
-$color_s: rgb(204, 158, 94);
+$color_s:rgb(250, 238, 224);
+$font_mono:  "Courier New", Courier, monospace;
+$font_size: 3rem;
 
 
 @mixin titulos {
   font-size: 5 rem;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  color: $color_s;
+  font-family: $font_mono;
+  color: $color_l;
   display: block;
   padding: 10px;
+}
 
-  @media(max-width: 984px) {
+@media(max-width: 984px) {
+  .titulo {
+    font-size: $font_size;
+    padding: 20px;
+  }
+}   
+  @media(max-width: 576px) {
     .titulo {
-      font-size: 3rem;
+      font-size: $font_size - 1;
       padding: 20px;
     }
-  }   
-    @media(max-width: 576px) {
-      .titulo {
-        font-size: 2rem;
-        padding: 20px;
-      }
-    } 
-}
+  } 
 
 @mixin sub-titulos {
-  font-size: 3rem;
+  font-size: $font_size -2;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $font_mono;
   display: block;
-  color: $color_s;
+  color: $color_m;
   padding: 5px;
-  @media(max-width: 984px) {
+}
+@media(max-width: 984px) {
+  .sub-titulos {
+    font-size: $font_size -2;
+    padding: 20px;
+  }
+}   
+  @media(max-width: 576px) {
     .sub-titulos {
-      font-size: 1rem;
+      font-size: $font_size -2,5;
       padding: 20px;
     }
-  }   
-    @media(max-width: 576px) {
-      .sub-titulos {
-        font-size: 0.5rem;
-
-        padding: 20px;
-      }
-    } 
-}
-
+  } 
 
 @mixin descripcion{
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $font_mono;
   display: block;
-  color: $color_m;
+  color: $color_s;
   padding: 5px;
 }
 

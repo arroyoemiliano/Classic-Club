@@ -1,14 +1,17 @@
-$color_l: rgb(250, 238, 224);
-$color_m: rgb(249, 228, 200);
-$color_s: rgb(249, 207, 147);
 
+
+// Variables
+$color_l: rgb(249, 207, 147);
+$color_m: rgb(249, 228, 200);
+$color_s:rgb(250, 238, 224);
+$font_mono:  "Courier New", Courier, monospace;
+$font_size: 3rem;
 $max-height : 150px;
 $border-radius: 2rem;
 
 /* Estilos HTML Home */
 
 
-/* defino las areas dentro de la grilla Ultimas reseñas y agregadas */
 
 
 /* Le doy formato a las secciones  HOME*/
@@ -18,23 +21,23 @@ $border-radius: 2rem;
     flex-direction: row;
     h3{
       text-align: center;
-      font-family: "Courier New", Courier, monospace;
+      font-family: $font_mono
     }
     .seccionhome-resenas {
       margin: 15px;
-      background-color: $color_s;
+      background-color: $color_l;
       border-radius: $border-radius +1;
       .resenas-titulo{
       font-size: 3rem;
       text-align: center;
-      font-family: "Courier New", Courier, monospace;
+      font-family: $font_mono;
       }
 
       .resenas-body {
         display: flex;
         p{
           text-align: left;
-          font-family: "Courier New", Courier, monospace;
+          font-family: $font_mono;
         }
         img {
           max-height: $max-height*2;
@@ -74,18 +77,19 @@ $border-radius: 2rem;
     }
     .seccionhome-ultimasagregadas {
       margin: 15px;
-      background-color: $color_s;
+      background-color: $color_l;
       border-radius: $border-radius +1;
+
       .ultimasagregadas-titulo{
         font-size: 3rem;
         text-align: center;
-        font-family: "Courier New", Courier, monospace;
+        font-family: $font_mono;
         }
       .ultimasagregadas-body{
         display: flex;
         p{
           text-align: left;
-          font-family: "Courier New", Courier, monospace;
+          font-family: $font_mono;
         }
         img {
           max-height: $max-height*2;
@@ -146,18 +150,18 @@ $border-radius: 2rem;
 
 .seccionactores{
    h3{
-    font-size: 1.5rem;
+    font-size: $font_size/2;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: $font_mono;
     display: block;
-    color: rgb(204, 158, 94);
+    color: $color_s;
     padding: 10px;
   }
   .card-group{
     img {
       max-height: 250px;
       width:auto;
-      border-radius: 2rem;
+      border-radius: $border-radius;
       margin-top: 10px;
     } 
     @media(max-width: 984px) {
@@ -167,10 +171,10 @@ $border-radius: 2rem;
       }
     }
     .card {
-      background-color: $color_s;
+      background-color: $color_l;
       border-radius: 2rem;
       .card-body{
-            font-family: "Courier New", Courier, monospace; 
+            font-family: $font_mono;
             }
   
     }
