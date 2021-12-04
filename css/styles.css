@@ -383,7 +383,7 @@
 
 /* Estilos HTML Formulario */
 /* Bloque de seccion de formulario de contacto */
-.seccion__contacto {
+.seccion-contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,39 +395,39 @@
   border-radius: 2rem;
 }
 
-.seccion__contacto fieldset {
+.seccion-contacto fieldset {
   border-radius: 3rem;
   background-color: #f9cf93;
 }
 
-.seccion__contacto .col {
+.seccion-contacto .col {
   padding: 10px;
 }
 
-.seccion__contacto .form-group {
+.seccion-contacto .form-group {
   padding: 10px;
 }
 
-.seccion__contacto .input-group {
+.seccion-contacto .input-group {
   padding: 10px;
 }
 
-.seccion__contacto legend {
+.seccion-contacto legend {
   color: black;
   font-family: "Courier New", Courier, monospace;
 }
 
-.seccion__contacto label {
+.seccion-contacto label {
   color: black;
   font-family: "Courier New", Courier, monospace;
 }
 
-.seccion__contacto option {
+.seccion-contacto option {
   color: black;
   font-family: "Courier New", Courier, monospace;
 }
 
-.seccion__contacto .btn {
+.seccion-contacto .btn {
   color: black;
   background-color: #faeee0;
   border-color: #f9e4c8;
