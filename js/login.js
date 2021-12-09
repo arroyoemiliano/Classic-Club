@@ -27,7 +27,7 @@ alert('Hola! Bienvenido a Classic/Club');
 
 
 let user = prompt('User Name');
-
+let password = prompt('Password');
 
 
 
@@ -35,7 +35,7 @@ saludo(user);
 
 function saludo(nombre) {
 
-    if (nombre == 'null') {
+    if (nombre == ' ' && password == ' ') {
         alert('No dijiste hola, Chau!');
          
      }else{
