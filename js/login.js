@@ -18,20 +18,16 @@
 // createUser('arroyo@gmail.com', 'Emiliano', 'Arroyo');
 
 
-
 //Saludo de Bienvenida para Login
 
 alert('Hola! Bienvenido a Classic/Club');
 
+let nombre = (prompt('Ingrese su Nombre'));
 
 
 
-let user = prompt('User Name');
-let password = prompt('Password');
 
-
-
-saludo(user);
+//saludo(user);
 
 function saludo(nombre) {
 
@@ -42,4 +38,45 @@ function saludo(nombre) {
          alert('Bienvenido a Classic/Club ' + nombre);
       }
     
+}
+
+
+nombre_usuario(nombre);
+//Segun el nombnre que ingresa
+function nombre_usuario(nombre){
+    
+    switch (nombre) {
+        case "ANA":
+            alert('Bienvenido a Classic/Club ' + nombre);
+             break;
+        case "EMILIANO":
+            alert('Bienvenido a Classic/Club ' + nombre);
+            break;
+         case "JUAN":
+            alert('Bienvenido a Classic/Club ' + nombre);
+             break;
+        default:
+            alert('Hola ' + nombre  + ' no poduede ingresar, usted no es miembro');
+            break;
+    }
+    
+ }
+
+
+
+let user_name = prompt('Ingrese su User Name');
+
+lenght(user_name);
+
+function lenght (user){
+
+        if (user.length >= 3 && user.length <= 8){
+            
+            alert('Bienvenido ' + user)
+        } 
+        else{
+            alert('Su nombre NO cumple con la cantidad de caracteres solicitados')
+        }
+
+        
 }
