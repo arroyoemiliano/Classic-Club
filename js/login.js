@@ -20,63 +20,63 @@
 
 //Saludo de Bienvenida para Login
 
-alert('Hola! Bienvenido a Classic/Club');
+// alert('Hola! Bienvenido a Classic/Club');
 
-let nombre = (prompt('Ingrese su Nombre'));
+// let nombre = (prompt('Ingrese su Nombre'));
 
+// //saludo(user);
 
+// function saludo(nombre) {
 
-
-//saludo(user);
-
-function saludo(nombre) {
-
-    if (nombre == ' ' && password == ' ') {
-        alert('No dijiste hola, Chau!');
+//     if (nombre == ' ' && password == ' ') {
+//         alert('No dijiste hola, Chau!');
          
-     }else{
-         alert('Bienvenido a Classic/Club ' + nombre);
-      }
+//      }else{
+//          alert('Bienvenido a Classic/Club ' + nombre);
+//       }
     
-}
+// }
 
 
-nombre_usuario(nombre);
-//Segun el nombnre que ingresa
-function nombre_usuario(nombre){
+// nombre_usuario(nombre);
+// //Segun el nombnre que ingresa
+// function nombre_usuario(nombre){
     
-    switch (nombre) {
-        case "ANA":
-            alert('Bienvenido a Classic/Club ' + nombre);
-             break;
-        case "EMILIANO":
-            alert('Bienvenido a Classic/Club ' + nombre);
-            break;
-         case "JUAN":
-            alert('Bienvenido a Classic/Club ' + nombre);
-             break;
-        default:
-            alert('Hola ' + nombre  + ' no poduede ingresar, usted no es miembro');
-            break;
-    }
+//     switch (nombre) {
+//         case "ANA":
+//             alert('Bienvenido a Classic/Club ' + nombre);
+//              break;
+//         case "EMILIANO":
+//             alert('Bienvenido a Classic/Club ' + nombre);
+//             break;
+//          case "JUAN":
+//             alert('Bienvenido a Classic/Club ' + nombre);
+//              break;
+//         default:
+//             alert('Hola ' + nombre  + ' no poduede ingresar, usted no es miembro');
+//             break;
+//     }
     
- }
+//  }
 
+// let user_name = prompt('Ingrese su User Name');
 
+// //Segun cantidad de caracteres para Nombre de Usuario
+// lenght(user_name);
 
-let user_name = prompt('Ingrese su User Name');
+// function lenght (user){
 
-lenght(user_name);
-
-function lenght (user){
-
-        if (user.length >= 3 && user.length <= 8){
+//         if (user.length >= 3 && user.length <= 8){
             
-            alert('Bienvenido ' + user)
-        } 
-        else{
-            alert('Su nombre NO cumple con la cantidad de caracteres solicitados')
-        }
+//             alert('Bienvenido ' + user)
+//         } 
+//         else{
+//             alert('Su nombre NO cumple con la cantidad de caracteres solicitados')
+//         }
 
         
-}
+// }
+
+
+
+
